@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
 				"timeline:test-output-thread/"
 				}, 
 		monochrome = true,
-		glue = { "parallel" },
+		glue = { "" },
 		features = { "src/test/resources/parallel" }
 )
 

@@ -1,189 +1,120 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "23c3bdcc-ea3e-4e5f-9b04-e30903cbe57f",
-    "feature": "Account Page Feature",
-    "scenario": "Accounts section count",
-    "start": 1616870741218,
-    "group": 16,
-    "content": "",
-    "tags": "@accounts,",
-    "end": 1616870762760,
-    "className": "failed"
-  },
-  {
-    "id": "74ca60a7-09ce-47b3-98ce-dfa4dfc87712",
-    "feature": "Account Page Feature",
-    "scenario": "Accounts page title",
-    "start": 1616870741213,
-    "group": 15,
-    "content": "",
-    "tags": "@accounts,",
-    "end": 1616870761127,
-    "className": "failed"
-  },
-  {
-    "id": "aaafb1e1-fceb-4c00-9427-9e803661a47d",
-    "feature": "Account Page Feature",
-    "scenario": "Accounts page title",
-    "start": 1616870757264,
-    "group": 23,
-    "content": "",
-    "tags": "@accounts,",
-    "end": 1616870769052,
-    "className": "failed"
-  },
-  {
-    "id": "44f55bab-27ae-401f-93ab-64ede95eadbc",
-    "feature": "Login page feature",
-    "scenario": "Login page title",
-    "start": 1616870741217,
-    "group": 23,
+    "id": "6c4d2973-6594-4ac5-95b0-3cbef2891c16",
+    "feature": "Contact Us Feature",
+    "scenario": "Contact Us scenario with different set of data",
+    "start": 1616955535235,
+    "group": 1,
     "content": "",
     "tags": "",
-    "end": 1616870757255,
+    "end": 1616955543572,
     "className": "passed"
   },
   {
-    "id": "a8f228ce-06a4-49f3-9b49-a77add4e2460",
-    "feature": "Contact Us Feature",
-    "scenario": "Contact Us scenario with different set of data",
-    "start": 1616870741211,
-    "group": 21,
-    "content": "",
-    "tags": "",
-    "end": 1616870760238,
-    "className": "failed"
-  },
-  {
-    "id": "6c307c46-fa85-4afe-b400-f2b3b49e4f42",
-    "feature": "Contact Us Feature",
-    "scenario": "Contact Us scenario with different set of data",
-    "start": 1616870741209,
-    "group": 18,
-    "content": "",
-    "tags": "",
-    "end": 1616870760228,
-    "className": "failed"
-  },
-  {
-    "id": "b02d3017-048b-4c4c-aaad-4999d0a1d165",
-    "feature": "Contact Us Feature",
-    "scenario": "Contact Us scenario with different set of data",
-    "start": 1616870741210,
-    "group": 22,
-    "content": "",
-    "tags": "",
-    "end": 1616870756497,
-    "className": "failed"
-  },
-  {
-    "id": "46e1e5cf-03b9-49f4-ad2b-ed7d56ee4790",
+    "id": "ded6e160-75b5-4ab0-9ca7-666a1e646c2f",
     "feature": "Account Page Feature",
     "scenario": "Accounts section count",
-    "start": 1616870759566,
-    "group": 20,
+    "start": 1616955505104,
+    "group": 1,
     "content": "",
     "tags": "@accounts,",
-    "end": 1616870772135,
-    "className": "failed"
+    "end": 1616955516228,
+    "className": "passed"
   },
   {
-    "id": "05fd3fa9-9fde-47a2-9b68-9d771374e190",
-    "feature": "Contact Us Feature",
-    "scenario": "Contact Us scenario with different set of data",
-    "start": 1616870741212,
-    "group": 17,
-    "content": "",
-    "tags": "",
-    "end": 1616870759620,
-    "className": "failed"
-  },
-  {
-    "id": "10067b36-7caa-4b01-bd00-33684c92c5dc",
-    "feature": "Contact Us Feature",
-    "scenario": "Contact Us scenario with different set of data",
-    "start": 1616870741203,
-    "group": 19,
-    "content": "",
-    "tags": "",
-    "end": 1616870760242,
-    "className": "failed"
-  },
-  {
-    "id": "5cfe46c2-2b12-4333-b40c-538ebf678029",
+    "id": "f1479450-ac53-4bb8-ac08-3fd61038abe1",
     "feature": "Login page feature",
-    "scenario": "Forgot Password link",
-    "start": 1616870741162,
-    "group": 24,
+    "scenario": "Login page title",
+    "start": 1616955543577,
+    "group": 1,
     "content": "",
     "tags": "",
-    "end": 1616870766769,
-    "className": "failed"
+    "end": 1616955550928,
+    "className": "passed"
   },
   {
-    "id": "0a0bbb98-f2b6-4dc2-b1ef-0607f80fa191",
-    "feature": "Contact Us Feature",
-    "scenario": "Contact Us scenario with different set of data",
-    "start": 1616870741204,
-    "group": 20,
-    "content": "",
-    "tags": "",
-    "end": 1616870759559,
-    "className": "failed"
-  },
-  {
-    "id": "1589048e-6eef-4b7c-8503-c052e447dd16",
+    "id": "ae6af11f-d826-4ddf-bb24-257e3f6218f2",
     "feature": "Login page feature",
     "scenario": "Login with correct credentials",
-    "start": 1616870756515,
-    "group": 22,
+    "start": 1616955559026,
+    "group": 1,
     "content": "",
     "tags": "",
-    "end": 1616870766523,
-    "className": "failed"
+    "end": 1616955571201,
+    "className": "passed"
+  },
+  {
+    "id": "513c04a4-72da-46f0-a324-ab1e6107ea54",
+    "feature": "Account Page Feature",
+    "scenario": "Accounts section count",
+    "start": 1616955581373,
+    "group": 1,
+    "content": "",
+    "tags": "@accounts,",
+    "end": 1616955591709,
+    "className": "passed"
+  },
+  {
+    "id": "5d32ac88-e0ab-4e6d-9fd0-9f3c4ce96b20",
+    "feature": "Account Page Feature",
+    "scenario": "Accounts page title",
+    "start": 1616955494919,
+    "group": 1,
+    "content": "",
+    "tags": "@accounts,",
+    "end": 1616955505083,
+    "className": "passed"
+  },
+  {
+    "id": "25fca017-ee8a-4530-b917-003bd62fbcaa",
+    "feature": "Contact Us Feature",
+    "scenario": "Contact Us scenario with different set of data",
+    "start": 1616955516236,
+    "group": 1,
+    "content": "",
+    "tags": "",
+    "end": 1616955525684,
+    "className": "passed"
+  },
+  {
+    "id": "06bd2f9f-cdc2-48dd-aaef-2acc51f150ad",
+    "feature": "Login page feature",
+    "scenario": "Forgot Password link",
+    "start": 1616955550933,
+    "group": 1,
+    "content": "",
+    "tags": "",
+    "end": 1616955559021,
+    "className": "passed"
+  },
+  {
+    "id": "1ac889d9-21de-46b5-8d7d-cb14f927cf99",
+    "feature": "Account Page Feature",
+    "scenario": "Accounts page title",
+    "start": 1616955571205,
+    "group": 1,
+    "content": "",
+    "tags": "@accounts,",
+    "end": 1616955581369,
+    "className": "passed"
+  },
+  {
+    "id": "80af771c-81cb-41e9-89e7-640bfb806796",
+    "feature": "Contact Us Feature",
+    "scenario": "Contact Us scenario with different set of data",
+    "start": 1616955525690,
+    "group": 1,
+    "content": "",
+    "tags": "",
+    "end": 1616955535230,
+    "className": "passed"
   }
 ]);
 CucumberHTML.timelineGroups.pushArray([
   {
-    "id": 15,
-    "content": "Thread[TestNG-PoolService-0,5,main]"
-  },
-  {
-    "id": 16,
-    "content": "Thread[TestNG-PoolService-1,5,main]"
-  },
-  {
-    "id": 17,
-    "content": "Thread[TestNG-PoolService-2,5,main]"
-  },
-  {
-    "id": 18,
-    "content": "Thread[TestNG-PoolService-3,5,main]"
-  },
-  {
-    "id": 19,
-    "content": "Thread[TestNG-PoolService-4,5,main]"
-  },
-  {
-    "id": 20,
-    "content": "Thread[TestNG-PoolService-5,5,main]"
-  },
-  {
-    "id": 21,
-    "content": "Thread[TestNG-PoolService-6,5,main]"
-  },
-  {
-    "id": 22,
-    "content": "Thread[TestNG-PoolService-7,5,main]"
-  },
-  {
-    "id": 23,
-    "content": "Thread[TestNG-PoolService-8,5,main]"
-  },
-  {
-    "id": 24,
-    "content": "Thread[TestNG-PoolService-9,5,main]"
+    "id": 1,
+    "content": "Thread[main,5,main]"
   }
 ]);
 });

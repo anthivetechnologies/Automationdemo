@@ -120,8 +120,8 @@
 					<includes>
 						<include>**/ParallelRun.java</include>
 					</includes>
-					<parallel>methods</parallel>
-					<threadCount>4</threadCount>
+					<parallel>feature</parallel>
+					<threadCount>1</threadCount>
 					<useUnlimitedThreads>false</useUnlimitedThreads>
 				</configuration>
 			</plugin>

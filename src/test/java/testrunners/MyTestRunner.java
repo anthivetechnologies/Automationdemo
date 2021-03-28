@@ -7,8 +7,10 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"Users/pradeepsingh/Documents/project/LatestCucumber6WithPOM/src/test/resources/AppFeatures"},
-		glue = {"stepdefinitions", "AppHooks"},
+		features = {"src/test/resources/parallel"},
+		glue = {"parallel", "AppHooks"},
+		dryRun = false,
+		
 		plugin = {"pretty",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"timeline:test-output-thread/"

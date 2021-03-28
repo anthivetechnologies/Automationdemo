@@ -1,0 +1,6 @@
+parallel/ParallelRun.class
+testrunners/MyTestRunner.class
+parallel/AccountsPageSteps.class
+parallel/LoginPageSteps.class
+parallel/ApplicationHooks.class
+parallel/ContactUsSteps.class
