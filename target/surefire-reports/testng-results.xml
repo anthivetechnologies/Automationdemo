@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="12" ignored="0" total="13" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="49393" started-at="2021-03-27T18:45:40Z" finished-at="2021-03-27T18:46:29Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@675d3402]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="49393" started-at="2021-03-27T18:45:40Z" finished-at="2021-03-27T18:46:29Z">
+      <class name="parallel.ParallelRun">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:parallel.ParallelRun@675d3402]" name="setUpClass" is-config="true" duration-ms="830" started-at="2021-03-27T18:45:40Z" finished-at="2021-03-27T18:45:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@675d3402]" name="runScenario" duration-ms="20099" started-at="2021-03-27T18:45:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-27T18:46:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Accounts page title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Account Page Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:87)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at org.junit.Assert.assertTrue(Assert.java:53)
+at parallel.LoginPageSteps.page_title_should_be(LoginPageSteps.java:32)
+at ✽.page title should be "My account - My Store"(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/AccountsPage.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@675d3402]" name="runScenario" duration-ms="16226" started-at="2021-03-27T18:45:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-27T18:45:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login page title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login page feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@675d3402]" name="runScenario" duration-ms="15471" started-at="2021-03-27T18:45:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-27T18:45:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Contact Us scenario with different set of data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Contact Us Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.qa.utill.ExcelReader.readSheet(ExcelReader.java:49)
+at com.qa.utill.ExcelReader.getData(ExcelReader.java:24)
+at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+at ✽.user fills the form from given sheetname "contactus" and rownumber 5(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/ContactUs.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@675d3402]" name="runScenario" duration-ms="19210" started-at="2021-03-27T18:45:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-27T18:46:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Contact Us scenario with different set of data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Contact Us Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.qa.utill.ExcelReader.readSheet(ExcelReader.java:49)
+at com.qa.utill.ExcelReader.getData(ExcelReader.java:24)
+at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+at ✽.user fills the form from given sheetname "contactus" and rownumber 4(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/ContactUs.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@675d3402]" name="runScenario" duration-ms="19213" started-at="2021-03-27T18:45:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-27T18:46:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Contact Us scenario with different set of data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Contact Us Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.qa.utill.ExcelReader.readSheet(ExcelReader.java:49)
+at com.qa.utill.ExcelReader.getData(ExcelReader.java:24)
+at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+at ✽.user fills the form from given sheetname "contactus" and rownumber 2(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/ContactUs.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@675d3402]" name="runScenario" duration-ms="18591" started-at="2021-03-27T18:45:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-27T18:45:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Contact Us scenario with different set of data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Contact Us Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.qa.utill.ExcelReader.readSheet(ExcelReader.java:49)
+at com.qa.utill.ExcelReader.getData(ExcelReader.java:24)
+at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+at ✽.user fills the form from given sheetname "contactus" and rownumber 0(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/ContactUs.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@675d3402]" name="runScenario" duration-ms="18530" started-at="2021-03-27T18:45:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-27T18:45:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Contact Us scenario with different set of data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Contact Us Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.qa.utill.ExcelReader.readSheet(ExcelReader.java:49)
+at com.qa.utill.ExcelReader.getData(ExcelReader.java:24)
+at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+at ✽.user fills the form from given sheetname "contactus" and rownumber 3(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/ContactUs.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@675d3402]" name="runScenario" duration-ms="25741" started-at="2021-03-27T18:45:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-27T18:46:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Forgot Password link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login page feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Forgot your password?111"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'pradeeps-MacBook-Pro.local', ip: '2401:4900:47f0:1ab1:4510:41e6:6bfe:f98b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/6m/1nb0622d6zn...}, goog:chromeOptions: {debuggerAddress: localhost:49805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 08cd943a42ea47341582b0c91f937e7c
+*** Element info: {Using=link text, value=Forgot your password?111}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Forgot your password?111"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'pradeeps-MacBook-Pro.local', ip: '2401:4900:47f0:1ab1:4510:41e6:6bfe:f98b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/6m/1nb0622d6zn...}, goog:chromeOptions: {debuggerAddress: localhost:49805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 08cd943a42ea47341582b0c91f937e7c
+*** Element info: {Using=link text, value=Forgot your password?111}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.pages.LoginPage.isForgotPwdLinkExist(LoginPage.java:28)
+at parallel.LoginPageSteps.forgot_your_password_link_should_be_displayed(LoginPageSteps.java:37)
+at ✽.forgot your password link should be displayed(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/LoginPage.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@675d3402]" name="runScenario" duration-ms="21731" started-at="2021-03-27T18:45:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-27T18:46:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Accounts section count"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Account Page Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:87)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at org.junit.Assert.assertTrue(Assert.java:53)
+at parallel.AccountsPageSteps.user_gets_accounts_section(AccountsPageSteps.java:50)
+at ✽.user gets accounts section(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/AccountsPage.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@675d3402]" name="runScenario" duration-ms="19197" started-at="2021-03-27T18:45:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-27T18:46:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Contact Us scenario with different set of data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Contact Us Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.qa.utill.ExcelReader.readSheet(ExcelReader.java:49)
+at com.qa.utill.ExcelReader.getData(ExcelReader.java:24)
+at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+at ✽.user fills the form from given sheetname "contactus" and rownumber 1(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/ContactUs.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@675d3402]" name="runScenario" duration-ms="10016" started-at="2021-03-27T18:45:56Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-27T18:46:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with correct credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login page feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:87)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at org.junit.Assert.assertTrue(Assert.java:53)
+at parallel.LoginPageSteps.page_title_should_be(LoginPageSteps.java:32)
+at ✽.page title should be "My account - My Store"(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/LoginPage.feature:18)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@675d3402]" name="runScenario" duration-ms="11797" started-at="2021-03-27T18:45:57Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-27T18:46:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Accounts page title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Account Page Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:87)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at org.junit.Assert.assertTrue(Assert.java:53)
+at parallel.LoginPageSteps.page_title_should_be(LoginPageSteps.java:32)
+at ✽.page title should be "My account - My Store"(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/acc.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@675d3402]" name="runScenario" duration-ms="12576" started-at="2021-03-27T18:45:59Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-27T18:46:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Accounts section count"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Account Page Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:87)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at org.junit.Assert.assertTrue(Assert.java:53)
+at parallel.AccountsPageSteps.user_gets_accounts_section(AccountsPageSteps.java:50)
+at ✽.user gets accounts section(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/acc.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:parallel.ParallelRun@675d3402]" name="tearDownClass" is-config="true" duration-ms="17411" started-at="2021-03-27T18:46:12Z" finished-at="2021-03-27T18:46:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- parallel.ParallelRun -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

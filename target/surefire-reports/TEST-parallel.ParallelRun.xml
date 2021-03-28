@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="parallel.ParallelRun" time="59.637" tests="13" errors="0" skipped="0" failures="12">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/target/test-classes:/Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/target/classes:/Users/pradeepsingh/.m2/repository/io/cucumber/cucumber-java/6.9.0/cucumber-java-6.9.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/cucumber-core/6.9.0/cucumber-core-6.9.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/cucumber-gherkin/6.9.0/cucumber-gherkin-6.9.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.9.0/cucumber-gherkin-messages-6.9.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/messages/13.2.0/messages-13.2.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/cucumber-plugin/6.9.0/cucumber-plugin-6.9.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/docstring/6.9.0/docstring-6.9.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/create-meta/2.0.4/create-meta-2.0.4.jar:/Users/pradeepsingh/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/cucumber-junit/6.9.0/cucumber-junit-6.9.0.jar:/Users/pradeepsingh/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/pradeepsingh/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/pradeepsingh/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/pradeepsingh/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/pradeepsingh/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/pradeepsingh/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/pradeepsingh/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/pradeepsingh/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/pradeepsingh/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/pradeepsingh/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/pradeepsingh/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/pradeepsingh/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/pradeepsingh/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/pradeepsingh/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/pradeepsingh/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/pradeepsingh/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/pradeepsingh/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/pradeepsingh/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/pradeepsingh/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/pradeepsingh/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/pradeepsingh/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/pradeepsingh/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/pradeepsingh/.m2/repository/io/github/bonigarcia/webdrivermanager/4.2.2/webdrivermanager-4.2.2.jar:/Users/pradeepsingh/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/pradeepsingh/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/Users/pradeepsingh/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/pradeepsingh/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/pradeepsingh/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar:/Users/pradeepsingh/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar:/Users/pradeepsingh/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.1/httpcore5-h2-5.0.1.jar:/Users/pradeepsingh/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/Users/pradeepsingh/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/pradeepsingh/.m2/repository/tech/grasshopper/extentreports-cucumber6-adapter/2.6.0/extentreports-cucumber6-adapter-2.6.0.jar:/Users/pradeepsingh/.m2/repository/com/aventstack/extentreports/5.0.5/extentreports-5.0.5.jar:/Users/pradeepsingh/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/pradeepsingh/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/pradeepsingh/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/pradeepsingh/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar:/Users/pradeepsingh/.m2/repository/tech/grasshopper/extent-pdf-report/1.5.0/extent-pdf-report-1.5.0.jar:/Users/pradeepsingh/.m2/repository/tech/grasshopper/cucumber-pdf-report/1.7.0/cucumber-pdf-report-1.7.0.jar:/Users/pradeepsingh/.m2/repository/org/apache/pdfbox/pdfbox/2.0.21/pdfbox-2.0.21.jar:/Users/pradeepsingh/.m2/repository/org/apache/pdfbox/fontbox/2.0.21/fontbox-2.0.21.jar:/Users/pradeepsingh/.m2/repository/org/knowm/xchart/xchart/3.6.5/xchart-3.6.5.jar:/Users/pradeepsingh/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/Users/pradeepsingh/.m2/repository/de/rototor/pdfbox/graphics2d/0.27/graphics2d-0.27.jar:/Users/pradeepsingh/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/Users/pradeepsingh/.m2/repository/com/github/vandeseer/easytable/0.7.1/easytable-0.7.1.jar:/Users/pradeepsingh/.m2/repository/com/github/ralfstuckert/pdfbox-layout/pdfbox2-layout/1.0.0/pdfbox2-layout-1.0.0.jar:/Users/pradeepsingh/.m2/repository/org/yaml/snakeyaml/1.27/snakeyaml-1.27.jar:/Users/pradeepsingh/.m2/repository/com/aventstack/klov-reporter/5.0.5/klov-reporter-5.0.5.jar:/Users/pradeepsingh/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/Users/pradeepsingh/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar:/Users/pradeepsingh/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar:/Users/pradeepsingh/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/pradeepsingh/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar:/Users/pradeepsingh/.m2/repository/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar:/Users/pradeepsingh/.m2/repository/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar:/Users/pradeepsingh/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/pradeepsingh/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/pradeepsingh/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/cucumber-testng/6.9.0/cucumber-testng-6.9.0.jar:/Users/pradeepsingh/.m2/repository/org/apache/poi/poi/4.1.2/poi-4.1.2.jar:/Users/pradeepsingh/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/pradeepsingh/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/pradeepsingh/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/pradeepsingh/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/pradeepsingh/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar:/Users/pradeepsingh/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.1.2/poi-ooxml-schemas-4.1.2.jar:/Users/pradeepsingh/.m2/repository/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar:/Users/pradeepsingh/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar:/Users/pradeepsingh/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/target/surefire/surefirebooter680714106308318974.jar /Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/target/surefire 2021-03-28T00-15-34_627-jvmRun1 surefire7958983946475937389tmp surefire_01086002237877988335tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="surefire.test.class.path" value="/Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/target/test-classes:/Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/target/classes:/Users/pradeepsingh/.m2/repository/io/cucumber/cucumber-java/6.9.0/cucumber-java-6.9.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/cucumber-core/6.9.0/cucumber-core-6.9.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/cucumber-gherkin/6.9.0/cucumber-gherkin-6.9.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.9.0/cucumber-gherkin-messages-6.9.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/messages/13.2.0/messages-13.2.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/cucumber-plugin/6.9.0/cucumber-plugin-6.9.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/docstring/6.9.0/docstring-6.9.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/create-meta/2.0.4/create-meta-2.0.4.jar:/Users/pradeepsingh/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/cucumber-junit/6.9.0/cucumber-junit-6.9.0.jar:/Users/pradeepsingh/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/pradeepsingh/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/pradeepsingh/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/pradeepsingh/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/pradeepsingh/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/pradeepsingh/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/pradeepsingh/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/pradeepsingh/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/pradeepsingh/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/pradeepsingh/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/pradeepsingh/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/pradeepsingh/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/pradeepsingh/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/pradeepsingh/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/pradeepsingh/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/pradeepsingh/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/pradeepsingh/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/pradeepsingh/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/pradeepsingh/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/pradeepsingh/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/pradeepsingh/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/pradeepsingh/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/pradeepsingh/.m2/repository/io/github/bonigarcia/webdrivermanager/4.2.2/webdrivermanager-4.2.2.jar:/Users/pradeepsingh/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/pradeepsingh/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/Users/pradeepsingh/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/pradeepsingh/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/pradeepsingh/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar:/Users/pradeepsingh/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar:/Users/pradeepsingh/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.1/httpcore5-h2-5.0.1.jar:/Users/pradeepsingh/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/Users/pradeepsingh/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/pradeepsingh/.m2/repository/tech/grasshopper/extentreports-cucumber6-adapter/2.6.0/extentreports-cucumber6-adapter-2.6.0.jar:/Users/pradeepsingh/.m2/repository/com/aventstack/extentreports/5.0.5/extentreports-5.0.5.jar:/Users/pradeepsingh/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/pradeepsingh/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/pradeepsingh/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/pradeepsingh/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar:/Users/pradeepsingh/.m2/repository/tech/grasshopper/extent-pdf-report/1.5.0/extent-pdf-report-1.5.0.jar:/Users/pradeepsingh/.m2/repository/tech/grasshopper/cucumber-pdf-report/1.7.0/cucumber-pdf-report-1.7.0.jar:/Users/pradeepsingh/.m2/repository/org/apache/pdfbox/pdfbox/2.0.21/pdfbox-2.0.21.jar:/Users/pradeepsingh/.m2/repository/org/apache/pdfbox/fontbox/2.0.21/fontbox-2.0.21.jar:/Users/pradeepsingh/.m2/repository/org/knowm/xchart/xchart/3.6.5/xchart-3.6.5.jar:/Users/pradeepsingh/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/Users/pradeepsingh/.m2/repository/de/rototor/pdfbox/graphics2d/0.27/graphics2d-0.27.jar:/Users/pradeepsingh/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/Users/pradeepsingh/.m2/repository/com/github/vandeseer/easytable/0.7.1/easytable-0.7.1.jar:/Users/pradeepsingh/.m2/repository/com/github/ralfstuckert/pdfbox-layout/pdfbox2-layout/1.0.0/pdfbox2-layout-1.0.0.jar:/Users/pradeepsingh/.m2/repository/org/yaml/snakeyaml/1.27/snakeyaml-1.27.jar:/Users/pradeepsingh/.m2/repository/com/aventstack/klov-reporter/5.0.5/klov-reporter-5.0.5.jar:/Users/pradeepsingh/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/Users/pradeepsingh/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar:/Users/pradeepsingh/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar:/Users/pradeepsingh/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/pradeepsingh/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar:/Users/pradeepsingh/.m2/repository/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar:/Users/pradeepsingh/.m2/repository/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar:/Users/pradeepsingh/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/pradeepsingh/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/pradeepsingh/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/Users/pradeepsingh/.m2/repository/io/cucumber/cucumber-testng/6.9.0/cucumber-testng-6.9.0.jar:/Users/pradeepsingh/.m2/repository/org/apache/poi/poi/4.1.2/poi-4.1.2.jar:/Users/pradeepsingh/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/pradeepsingh/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/pradeepsingh/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/pradeepsingh/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/pradeepsingh/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar:/Users/pradeepsingh/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.1.2/poi-ooxml-schemas-4.1.2.jar:/Users/pradeepsingh/.m2/repository/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar:/Users/pradeepsingh/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar:/Users/pradeepsingh/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/pradeepsingh"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/target/surefire/surefirebooter680714106308318974.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="1.8.0_281-b09"/>
+    <property name="user.name" value="pradeepsingh"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.15.5"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/pradeepsingh/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/6m/1nb0622d6zn8b_dsg9hbwgdc0000gn/T/"/>
+    <property name="java.version" value="1.8.0_281"/>
+    <property name="user.dir" value="/Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/pradeepsingh/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.281-b09"/>
+    <property name="java.ext.dirs" value="/Users/pradeepsingh/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="15.477">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+</failure>
+    <system-out><![CDATA[
+Scenario: Forgot Password link                       # src/test/resources/parallel/LoginPage.feature:8
+
+Scenario Outline: Contact Us scenario with different set of data                            # src/test/resources/parallel/ContactUs.feature:14
+
+Scenario Outline: Contact Us scenario with different set of data                            # src/test/resources/parallel/ContactUs.feature:16
+
+Scenario Outline: Contact Us scenario with different set of data                            # src/test/resources/parallel/ContactUs.feature:15
+
+Scenario Outline: Contact Us scenario with different set of data                            # src/test/resources/parallel/ContactUs.feature:11
+
+@accounts
+Scenario: Accounts page title                       # src/test/resources/parallel/AccountsPage.feature:9
+
+Scenario: Login page title                     # src/test/resources/parallel/LoginPage.feature:3
+
+Scenario Outline: Contact Us scenario with different set of data                            # src/test/resources/parallel/ContactUs.feature:12
+
+Scenario Outline: Contact Us scenario with different set of data                            # src/test/resources/parallel/ContactUs.feature:13
+
+@accounts
+Scenario: Accounts section count                  # src/test/resources/parallel/AccountsPage.feature:15
+browser value is: chrome
+browser value is: chrome
+browser value is: chrome
+browser value is: chrome
+browser value is: chrome
+browser value is: chrome
+browser value is: chrome
+browser value is: chrome
+browser value is: chrome
+browser value is: chrome
+  Given user navigates to contact us page                                                   # parallel.ContactUsSteps.user_navigates_to_contact_us_page()
+  When user fills the form from given sheetname "contactus" and rownumber 5                 # parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)
+      java.lang.NullPointerException
+	at com.qa.utill.ExcelReader.readSheet(ExcelReader.java:49)
+	at com.qa.utill.ExcelReader.getData(ExcelReader.java:24)
+	at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+	at ✽.user fills the form from given sheetname "contactus" and rownumber 5(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/ContactUs.feature:5)
+
+  And user clicks on send button                                                            # parallel.ContactUsSteps.user_clicks_on_send_button()
+  Then it shows a successful message "Your message has been successfully sent to our team." # parallel.ContactUsSteps.it_shows_a_successful_message(java.lang.String)
+
+    Embedding Contact_Us_scenario_with_different_set_of_data [image/png 318373 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+SStatSarting CStarthrtStartinSStaStSStarting rtitaarrtingrttg arting ComeDriniver 89hCairntging  Chrtng ChromeDriverChinogmeDrC ChhromeDr.g Chrome0.4389.23iveromeDriver romhroiver 8 romeDriver 89.0 89.0Chr9.0.43meeDDrr8r 8 Driv(9.09ivi89.23 (61b0o8m..4389.23 eee2cver 89.0.4389.23..0.461er b0343 er 89.5Dr(6143b0i0020(61b89.88ee2c89.0.435009.2208ee2c5.44bver 8ee2c89.500289.ab00380023324ba8b (61b 4bab0094042ba.e48d.23 (46e14b08e(08ee2c500209.204ba61be2c82b4b004e3431bd2b51b00208b4004e348de48ee4083089.8d23 ( 61b02b83cdbdac5cdbb2c50d2b1b 020a24d79-refs18ee(2cb083cdbda/babab00b00b1b083cdbdac57(9-83c4e44e84dc579-rerc579-ref561b0s/abfns/br28d2dbdr6efab1b0bach-ra0024nchhen1cb0883cdc57s/br1banch-he9-refs/brb3ch-ads/4-heads/4389@{#294}) on port 7182
+Only localb8aebe0204 3heads/4389@dbddanch-a0dhaac{#294})8coec548d2b1b083cdbdnne9@ on579-refs/branch-heads/4389c579-reads/4838s/efs@{#294}) {#2ctiaons a0r024bab004e4e c579-refs/branch-heads/4389@{#294}) on port94}) on port 20422
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+port 9412
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions  on keeping ChromeDriver safe.
+/branch-hea4389@ee{#2c5009@{ds/4on 2a8lld2b08 port389@{#294}) o#294})24b294}) oab onn por 1281b08owe3cd
+On1995
+Ont port004e4n p8d 34 12lyly lbdac579-refs/brand.
+Pch-hocal loca491
+O447
+On2bort 1b0ly lnll co ceadsle/43onnnectionsy ocal8353cd l on89ase see ht@ecctarecobda10c579-refs/brann alnectionioal{tp#294} cns as lch
+O-noweare alolow) on port 1495
+Onls:y local connere ad.
+Please see ly lochal htlld.
+Plnectnections// are allowed.
+Please see ioeoawsed.
+tpcoeanns:Ple nshtchtp aseeease see https://chrectds/4ioomed//ch rs://cromehre allohtromrivens arr.chromium.org/security-considerations38 foe allowed.
+Please seedtps://wedomedrivedriver.chromiur.ch.
+chromerie r s9@ughttpsver.drPlromm.org/security-consideratioinsum.orgeaivechro://chrge{#2stommir.se /sec uforisechrum.oedio94nsrirg/secomiume hty-consider ratittps:/.orurve o}) n keer.chromityg//chrons forsuggestions on keeping Chrom suggestions on keepinomedrise-consideriupinong Chm.oatcurity-considerationsveg CeDrhromer.chrom for suggestioniorg/seromeDri pver cunss iumDriver siver safe.
+af.oon k frisaortfety-or suggeeepirge.
+/sngstco.
+ 13918
+Onlnsio Cechrnsidy er oomureDrin atloiokever safe.
+ity-coepns forca suggingnsi Cestions on keeping ChromeDriver safe.
+l connections hrdeomareeDrivraetions for su allgowr sed.
+Please see https://chromedgestions on kerivafe.
+er.cheping romium.Chorrog/meDrseivcuerri safty-consideratie.
+ons for suggestions on keeping ChromeDriver safe.
+CChhromeChromeDriver was starteChrChrChroChChChChrororommeomeDomd suDriromvecceDririDrieDrivermeDmeroDrivrive was started successfuvevever essfr waeDrs stulwar r llyr waer wmeass st.
+waswas lyarteid ver was start.
+stas s sar started sDructedtatarted rteed successsufulld susuccesrted su successfully.
+ceiver wssfullccesfuccey.cce
+ssllssfuy.
+asllyf.ulssly
+y.
+ s.
+futallyrte.
+d successfully.
+Mar 28, 2021 12:15:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 28, 2021 12:15:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 28, 2021 12:15:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 28, 2021 12:15:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 28, 2021 12:15:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 28, 2021 12:15:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 28, 2021 12:15:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 28, 2021 12:15:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 28, 2021 12:15:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 28, 2021 12:15:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="0.746"/>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="2.304">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+</failure>
+    <system-out><![CDATA[
+@accounts
+Scenario: Accounts page title                       # src/test/resources/parallel/acc.feature:9
+browser value is: chrome
+  Given user navigates to contact us page                                                   # parallel.ContactUsSteps.user_navigates_to_contact_us_page()
+  Given user navigates to contact us page                                                   # parallel.ContactUsSteps.user_navigates_to_contact_us_page()
+  When user fills the form from given sheetname "contactus" and rownumber 3                 # parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)
+      java.lang.NullPointerException
+	at com.qa.utill.ExcelReader.readSheet(ExcelReader.java:49)
+	at com.qa.utill.ExcelReader.getData(ExcelReader.java:24)
+	at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+	at ✽.user fills the form from given sheetname "contactus" and rownumber 3(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/ContactUs.feature:5)
+
+  And user clicks on send button                                                            # parallel.ContactUsSteps.user_clicks_on_send_button()
+  Then it shows a successful message "Your message has been successfully sent to our team." # parallel.ContactUsSteps.it_shows_a_successful_message(java.lang.String)
+login with: ps8940@gmail.com and Password@123
+  When user fills the form from given sheetname "contactus" and rownumber 0                 # parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)
+      java.lang.NullPointerException
+	at com.qa.utill.ExcelReader.readSheet(ExcelReader.java:49)
+	at com.qa.utill.ExcelReader.getData(ExcelReader.java:24)
+	at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+	at ✽.user fills the form from given sheetname "contactus" and rownumber 0(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/ContactUs.feature:5)
+
+  And user clicks on send button                                                            # parallel.ContactUsSteps.user_clicks_on_send_button()
+  Then it shows a successful message "Your message has been successfully sent to our team." # parallel.ContactUsSteps.it_shows_a_successful_message(java.lang.String)
+  Given user navigates to contact us page                                                   # parallel.ContactUsSteps.user_navigates_to_contact_us_page()
+  When user fills the form from given sheetname "contactus" and rownumber 2                 # parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)
+      java.lang.NullPointerException
+	at com.qa.utill.ExcelReader.readSheet(ExcelReader.java:49)
+	at com.qa.utill.ExcelReader.getData(ExcelReader.java:24)
+	at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+	at ✽.user fills the form from given sheetname "contactus" and rownumber 2(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/ContactUs.feature:5)
+
+  And user clicks on send button                                                            # parallel.ContactUsSteps.user_clicks_on_send_button()
+  Then it shows a successful message "Your message has been successfully sent to our team." # parallel.ContactUsSteps.it_shows_a_successful_message(java.lang.String)
+  Given user navigates to contact us page                                                   # parallel.ContactUsSteps.user_navigates_to_contact_us_page()
+  When user fills the form from given sheetname "contactus" and rownumber 1                 # parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)
+      java.lang.NullPointerException
+	at com.qa.utill.ExcelReader.readSheet(ExcelReader.java:49)
+	at com.qa.utill.ExcelReader.getData(ExcelReader.java:24)
+	at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+	at ✽.user fills the form from given sheetname "contactus" and rownumber 1(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/ContactUs.feature:5)
+
+  And user clicks on send button                                                            # parallel.ContactUsSteps.user_clicks_on_send_button()
+  Then it shows a successful message "Your message has been successfully sent to our team." # parallel.ContactUsSteps.it_shows_a_successful_message(java.lang.String)
+  Given user navigates to contact us page                                                   # parallel.ContactUsSteps.user_navigates_to_contact_us_page()
+  When user fills the form from given sheetname "contactus" and rownumber 4                 # parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)
+      java.lang.NullPointerException
+	at com.qa.utill.ExcelReader.readSheet(ExcelReader.java:49)
+	at com.qa.utill.ExcelReader.getData(ExcelReader.java:24)
+	at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+	at ✽.user fills the form from given sheetname "contactus" and rownumber 4(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/ContactUs.feature:5)
+
+  And user clicks on send button                                                            # parallel.ContactUsSteps.user_clicks_on_send_button()
+  Then it shows a successful message "Your message has been successfully sent to our team." # parallel.ContactUsSteps.it_shows_a_successful_message(java.lang.String)
+login with: ps8940@gmail.com and Password@123
+
+    Embedding Contact_Us_scenario_with_different_set_of_data [image/png 318373 bytes]
+
+
+    Embedding Contact_Us_scenario_with_different_set_of_data [image/png 318373 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 27729
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 28, 2021 12:15:59 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Cleaning up unclosed ZipFile for archive /Users/pradeepsingh/Documents/automation.xlsx
+Cleaning up unclosed ZipFile for archive /Users/pradeepsingh/Documents/automation.xlsx
+Cleaning up unclosed ZipFile for archive /Users/pradeepsingh/Documents/automation.xlsx
+Cleaning up unclosed ZipFile for archive /Users/pradeepsingh/Documents/automation.xlsx
+Cleaning up unclosed ZipFile for archive /Users/pradeepsingh/Documents/automation.xlsx
+Cleaning up unclosed ZipFile for archive /Users/pradeepsingh/Documents/automation.xlsx
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="0.061">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+</failure>
+    <system-out><![CDATA[
+@accounts
+Scenario: Accounts section count                  # src/test/resources/parallel/acc.feature:15
+browser value is: chrome
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 22489
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="0.669">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+</failure>
+    <system-out><![CDATA[
+    Embedding Contact_Us_scenario_with_different_set_of_data [image/png 318373 bytes]
+
+
+    Embedding Contact_Us_scenario_with_different_set_of_data [image/png 318373 bytes]
+
+
+    Embedding Contact_Us_scenario_with_different_set_of_data [image/png 318373 bytes]
+
+  Given user has already logged in to application   # parallel.AccountsPageSteps.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)
+Accounts Page title is: Login - My Store
+  Given user is on Accounts page                    # parallel.AccountsPageSteps.user_is_on_accounts_page()
+Page title is: Login - My Store
+  When user gets the title of the page              # parallel.LoginPageSteps.user_gets_the_title_of_the_page()
+  Then page title should be "My account - My Store" # parallel.LoginPageSteps.page_title_should_be(java.lang.String)
+      java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at parallel.LoginPageSteps.page_title_should_be(LoginPageSteps.java:32)
+	at ✽.page title should be "My account - My Store"(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/AccountsPage.feature:12)
+
+]]></system-out>
+    <system-err><![CDATA[Mar 28, 2021 12:15:59 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="0.679">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+</failure>
+  </testcase>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="0.683">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+</failure>
+  </testcase>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="1.568">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+    <system-out><![CDATA[
+    Embedding Accounts_page_title [image/png 336115 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Mar 28, 2021 12:16:00 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="3.201">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+    <system-out><![CDATA[  Given user has already logged in to application # parallel.AccountsPageSteps.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)
+Accounts Page title is: Login - My Store
+  Given user is on Accounts page                  # parallel.AccountsPageSteps.user_is_on_accounts_page()
+Expected accounts section list: [ORDER HISTORY AND DETAILS, MY CREDIT SLIPS, MY ADDRESSES, MY PERSONAL INFORMATION, MY WISHLISTS, Home]
+Create an account
+
+Sign in
+Actual accounts section list: [Create an account, , Sign in]
+  Then user gets accounts section                 # parallel.AccountsPageSteps.user_gets_accounts_section(io.cucumber.datatable.DataTable)
+      java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at parallel.AccountsPageSteps.user_gets_accounts_section(AccountsPageSteps.java:50)
+	at ✽.user gets accounts section(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/AccountsPage.feature:17)
+
+  And accounts section count should be 6          # parallel.AccountsPageSteps.accounts_section_count_should_be(java.lang.Integer)
+
+    Embedding Accounts_section_count [image/png 335985 bytes]
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="6.963">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+    <system-out><![CDATA[  Given user is on login page                      # parallel.LoginPageSteps.user_is_on_login_page()
+  When user enters username "ps8940@gmail.com"     # parallel.LoginPageSteps.user_enters_username(java.lang.String)
+  And user enters password "Password@123"          # parallel.LoginPageSteps.user_enters_password(java.lang.String)
+  And user clicks on Login button                  # parallel.LoginPageSteps.user_clicks_on_login_button()
+Page title is: Login - My Store
+  Then user gets the title of the page             # parallel.LoginPageSteps.user_gets_the_title_of_the_page()
+  And page title should be "My account - My Store" # parallel.LoginPageSteps.page_title_should_be(java.lang.String)
+      java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at parallel.LoginPageSteps.page_title_should_be(LoginPageSteps.java:32)
+	at ✽.page title should be "My account - My Store"(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/LoginPage.feature:18)
+
+  Given user is on login page                        # parallel.LoginPageSteps.user_is_on_login_page()
+  Then forgot your password link should be displayed # parallel.LoginPageSteps.forgot_your_password_link_should_be_displayed()
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Forgot your password?111"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'pradeeps-MacBook-Pro.local', ip: '2401:4900:47f0:1ab1:4510:41e6:6bfe:f98b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/6m/1nb0622d6zn...}, goog:chromeOptions: {debuggerAddress: localhost:49805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 08cd943a42ea47341582b0c91f937e7c
+*** Element info: {Using=link text, value=Forgot your password?111}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.pages.LoginPage.isForgotPwdLinkExist(LoginPage.java:28)
+	at parallel.LoginPageSteps.forgot_your_password_link_should_be_displayed(LoginPageSteps.java:37)
+	at ✽.forgot your password link should be displayed(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/LoginPage.feature:10)
+
+
+    Embedding Login_with_correct_credentials [image/png 335952 bytes]
+
+login with: ps8940@gmail.com and Password@123
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="7.211">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Forgot your password?111&quot;}&#10;  (Session info: chrome=89.0.4389.90)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;pradeeps-MacBook-Pro.local&apos;, ip: &apos;2401:4900:47f0:1ab1:4510:41e6:6bfe:f98b%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.5&apos;, java.version: &apos;1.8.0_281&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/6m/1nb0622d6zn...}, goog:chromeOptions: {debuggerAddress: localhost:49805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 08cd943a42ea47341582b0c91f937e7c&#10;*** Element info: {Using=link text, value=Forgot your password?111}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"link text","selector":"Forgot your password?111"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'pradeeps-MacBook-Pro.local', ip: '2401:4900:47f0:1ab1:4510:41e6:6bfe:f98b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/6m/1nb0622d6zn...}, goog:chromeOptions: {debuggerAddress: localhost:49805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 08cd943a42ea47341582b0c91f937e7c
+*** Element info: {Using=link text, value=Forgot your password?111}
+</failure>
+    <system-out><![CDATA[
+    Embedding Forgot_Password_link [image/png 338051 bytes]
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="9.493">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+    <system-out><![CDATA[  Given user has already logged in to application   # parallel.AccountsPageSteps.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)
+Accounts Page title is: Login - My Store
+  Given user is on Accounts page                    # parallel.AccountsPageSteps.user_is_on_accounts_page()
+Page title is: Login - My Store
+  When user gets the title of the page              # parallel.LoginPageSteps.user_gets_the_title_of_the_page()
+  Then page title should be "My account - My Store" # parallel.LoginPageSteps.page_title_should_be(java.lang.String)
+      java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at parallel.LoginPageSteps.page_title_should_be(LoginPageSteps.java:32)
+	at ✽.page title should be "My account - My Store"(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/acc.feature:12)
+
+
+    Embedding Accounts_page_title [image/png 335887 bytes]
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="12.576">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+    <system-out><![CDATA[login with: ps8940@gmail.com and Password@123
+  Given user has already logged in to application # parallel.AccountsPageSteps.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)
+Accounts Page title is: Login - My Store
+  Given user is on Accounts page                  # parallel.AccountsPageSteps.user_is_on_accounts_page()
+Expected accounts section list: [ORDER HISTORY AND DETAILS, MY CREDIT SLIPS, MY ADDRESSES, MY PERSONAL INFORMATION, MY WISHLISTS, Home]
+Create an account
+
+Sign in
+Actual accounts section list: [Create an account, , Sign in]
+  Then user gets accounts section                 # parallel.AccountsPageSteps.user_gets_accounts_section(io.cucumber.datatable.DataTable)
+      java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at parallel.AccountsPageSteps.user_gets_accounts_section(AccountsPageSteps.java:50)
+	at ✽.user gets accounts section(file:///Users/pradeepsingh/Desktop/Automation/AnthivAutomationSolution/src/test/resources/parallel/acc.feature:17)
+
+  And accounts section count should be 6          # parallel.AccountsPageSteps.accounts_section_count_should_be(java.lang.Integer)
+
+    Embedding Accounts_section_count [image/png 335855 bytes]
+
+]]></system-out>
+  </testcase>
+</testsuite>
