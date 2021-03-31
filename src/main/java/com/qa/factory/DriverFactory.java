@@ -2,6 +2,7 @@ package com.qa.factory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
@@ -26,7 +27,16 @@ public class DriverFactory {
 
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			tlDriver.set(new ChromeDriver());
+			
+			ChromeOptions options = new ChromeOptions();
+			//options.setExperimentalOption("prefs", chromePrefs);
+			options.addArguments("--no-sandbox");
+			options.addArguments("--headless"); //should be enabled for Jenkins
+			options.addArguments("--disable-dev-shm-usage"); //should be enabled for Jenkins
+			options.addArguments("--window-size=1920x1080"); //should be enabled for Jenkins
+
+			
+			tlDriver.set(new ChromeDriver(options));
 		} else if (browser.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			tlDriver.set(new FirefoxDriver());
